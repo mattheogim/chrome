@@ -58,20 +58,93 @@
 // const player = ["Matteo", 121212, false, "little bit"];
 
 
-const player = {
-    name: "Matteo",
-    points: 10,
-    fat: "true"
-};
+// const player = {
+//     name: "Matteo",
+//     points: 10,
+//     fat: "true"
+// };
 
-console.log(player);
-console.log(player.name);
+// console.log(player);
+// console.log(player.name);
 
 
 // update object
 
-console.log(player);
-player.fat = false;
-player.lastName = "Bergamini";
-player.points = player.points + 15;
-console.log(player);
+// console.log(player);
+    // player.fat = false;
+    // player.lastName = "Bergamini";
+    // player.points = player.points + 15;
+    // console.log(player);
+
+    // console.log("hello my name is Matteo")
+    // console.log("hello my name is Dal")
+    // console.log("hello my name is Shigatsi")
+    // console.log("hello my name is Random")
+    // console.log("hello my name is hello")
+
+// function sayHello(nameOfPerson, age) {
+//     console.log("Hello my name is " + nameOfPerson + "and I am " + age + "years old");
+
+// }
+
+
+// sayHello("Matteo", 10);
+// sayHello("Vanessa", 23);
+// sayHello("Dal", 21);
+
+// function plus(anyNumber, iWant) {
+//     console.log(anyNumber + iWant);
+// }
+// function divide(a, b) {
+//     console.log(a / b);
+// }
+
+// plus(8, 60);
+// divide(98, 20);
+
+
+// const player = {
+//     name: "Matteo",
+//     sayHello: function (otherPersonsName) {
+//         console.log ("hello! " + otherPersonsName + "nice to meet you! ");
+//     },
+// };
+
+// console.log(player.name);
+// player.sayHello("Dal");
+
+
+const calculator = {
+    add: function(a, b) {
+        return (a + b);
+    },
+    divide: function(a, b) {
+        return (a / b);
+    },
+    multiply: function(a, b) {
+        return (a * b);
+    },
+    subtract: function(a, b) {
+        return (a - b);
+    },
+    powerOf: function(a, b) {
+        return (a ** b);
+    }
+}
+
+const addResult = calculator.add(1, 2)
+const subtractResult = calculator.subtract(addResult, 2)
+const multiplyResult = calculator.multiply(10, subtractResult)
+const divideResult = calculator.divide(multiplyResult, addResult)
+const powerOfResult = calculator.powerOf(divideResult, 2)
+console.log(powerOfResult);
+
+
+// const age = 96;
+// function calculateKrAge(ageOfForeigner) {
+//     return ageOfForeigner + 2;
+// }
+
+// const krAge = calculateKrAge(age);
+
+// console.log(krAge);
