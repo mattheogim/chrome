@@ -1,24 +1,36 @@
-const title = document.querySelector(".hello h1");
+const h1 = document.querySelector(".hello h1");
 
 
-console.dir(title);
+console.dir(h1);
 
-function handleTitleClick() {
-    title.style.color = "blue";
+function handleH1Click() {
+    h1.style.color = "blue";
 
 }
 
 function handleMouseEnter() {
-    title.innerText = "Mouse is here!";
+    h1.innerText = "Mouse is here!";
 
 }
 
 function handleMouseLeave() {
-    title.innerText = "Mouse is gone!";
+    h1.innerText = "Mouse is gone!";
 }
 
-title.onclick = handleTitleClick;
+h1.onclick = handleH1Click;
 
-title.onmouseenter = handleMouseEnter;
+h1.onmouseenter = handleMouseEnter;
 
-title.addEventListener("mouseleave", handleMouseLeave);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+window.addEventListener("resize", handleWindowResize);
+
+
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+window.addEventListener("copy", handleWindowCopy);
