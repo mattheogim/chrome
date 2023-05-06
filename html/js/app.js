@@ -34,3 +34,13 @@ function handleWindowCopy() {
 }
 
 window.addEventListener("copy", handleWindowCopy);
+
+
+function handleWindowOffline() {
+    alert("SOS no WIFI");
+}
+function handleWindowOnline() {
+    alert("ALL GOOD");
+}
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
