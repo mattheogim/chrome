@@ -1,3 +1,17 @@
 body {
     background-color: gray;
 }
+
+
+h1 {
+    color: blue;
+    transition: ease-in-out 500ms;
+}
+
+.active {
+    color: tomato;
+}
+
+.sexy-font {
+    font-family: 'Lobster', cursive;
+}
