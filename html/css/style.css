@@ -8,7 +8,7 @@ h1 {
     transition: ease-in-out 500ms;
 }
 
-.active {
+.clicked {
     color: tomato;
 }
 
